@@ -1,0 +1,137 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master_Store.Master.cs" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<title>Logic University Inventory System</title>
+<style type ="text/css">
+#logo {
+	background-image: url(Images/index_01.jpg);
+}
+#header {
+	background-image: url(Images/index_02.jpg);
+}
+#top_menu {
+	background-image: url(Images/index_03.jpg);
+}
+.top_menu {
+	background-image: url(Images/index_03.jpg);
+}
+.top_menu a {
+	background:url(Images/top_button.jpg);
+}
+.top_menu a:hover {	
+	
+	background: url(Images/top_button_hover.jpg);
+}
+.left_menu {
+	background-image: url(Images/index_08.jpg);
+}
+.left_menu a {
+	background:url(Images/left_button.jpg);
+}
+#content {
+	background-image: url(Images/index_05.jpg);
+}
+.left_menu a:hover {
+	
+	background: url(Images/left_button_hover.jpg);
+}
+#footer {
+	background-image: url(Images/index_09.jpg);
+}
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body bgcolor="#550403"  style="Leftmargin=0px; topmargin=0px; marginwidth=0px; marginheight=0px;">
+<span class="style6"></span>
+<form id="form1" runat="server">
+<!-- Save for Web Slices (business solutions_sliced.psd) -->
+<div id="body">
+<br />
+<br />
+<br />
+ <table style="width=100%; height=1001px;"  border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01"">
+    <tr>
+      <td colspan="2" rowspan="3"><div id="logo">
+      <div class="logo"><a href="index.html"><span class="style5">ISS<br />
+	  Infotech</span></a></div>
+      </div></td>
+<td colspan="3"><div class="style1" id="header">
+			<br />
+			<span class="style3">Logic University Inventory System</span>
+             <span class="style4"><br />
+             Provided by ISS Infotech-OUR SOLUTIONS MAKES YOUR BUSINESS BETTER!   </span></div></td>
+	      <td>
+		      <img src="Images/spacer.gif" width="1" height="185" alt="" /></td>
+      </tr>
+    <tr>
+      <td><div class="top_menu">
+      <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="index.html">ABOUT</a></li>
+      <li><a href="index.html">F.A.Q.</a></li>
+      <li><a href="index.html">COTNACT</a></li>
+      </ul>
+      </div></td>
+	    <td colspan="2">
+	        <img src="Images/index_04.jpg" width="128" height="42" alt="" /></td>
+	    <td>
+	        <img src="Images/spacer.gif" width="1" height="42" alt="" /></td>
+      </tr>
+    <tr>
+      <td colspan="2" rowspan="2"><div id="content">
+      <div class="title"></div>
+      <div class=" content">
+       
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+      
+      </div>
+      </div></td>
+	    <td rowspan="3">
+	        <img src="Images/index_06.jpg" width="27" height="773" alt="" /></td>
+	    <td>
+	        <img src="Images/spacer.gif" width="1" height="76" alt="" /></td>
+      </tr>
+    <tr>
+      <td rowspan="2"><img src="Images/index_07.jpg" width="70" height="697" alt=""/></td>
+      <td><div class="left_menu">
+        <ul>
+        <li><a href="DeptView.aspx">View Department Requests</a></li>
+        <li><a href="ItemRequested.aspx">View Item Requested</a></li>
+        <li><a href="ItemRetrieved.aspx">View Item Retrieved</a></li>
+        <li><a href="pending.aspx">Current Pending Request(s)</a></li>
+        </ul>
+        </div></td>
+	    <td>
+	        <img src="Images/spacer.gif" width="1" height="651" alt="" /></td>
+      </tr>
+    <tr>
+      <td colspan="3"><div id="footer">COPYRIGHT (C) 2010 &quot;YOUR SITE&quot;. DESIGN BY <a href="http://www.e-globalspot.com">wholesale china</a></div></td>
+  <td>
+	        <img src="Images/spacer.gif" width="1" height="46" alt="" /></td>
+      </tr>
+    <tr>
+      <td>
+        <img src="Images/spacer.gif" width="70" height="1" alt="" /></td>
+	    <td>
+	        <img src="Images/spacer.gif" width="179" height="1" alt="" /></td>
+	    <td>
+	        <img src="Images/spacer.gif" width="623" height="1" alt="" /></td>
+	    <td>
+	        <img src="Images/spacer.gif" width="101" height="1" alt="" /></td>
+	    <td>
+	        <img src="Images/spacer.gif" width="27" height="1" alt="" /></td>
+	    <td></td>
+      </tr>
+  </table>
+  <div id="lft"><a href="http://www.e-globalspot.com">wholesale china</a></div><br />
+  <br />
+</div>
+</form>
+<!-- End Save for Web Slices -->
+</body>
+</html>

@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Department_Master.master.cs" Inherits="MobilePresentationLogic.Department_Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Stationery Store Inventory System</title>
+   
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1">
+    
+           <link rel="stylesheet" 
+          href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+       <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+       <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.js"></script>
+         
+               <link type="text/css" href="Styles/Style.css" rel="stylesheet" media="screen" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+       
+        #container
+        {
+            width: 614px;
+            height: 124px;
+        }
+       
+        #form1
+        {
+            width: 615px;
+        }
+       
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <table id="container" align="left" cellspacing="0px" cellpadding="0px">
+              <tr> <td align="right"> 
+                  <asp:ImageButton ID="btnlogof" runat="server" Height="28px" 
+                            ImageUrl="~/Images/Log-Off.png" onclick="btnlogof_Click" 
+                      Width="47px" CausesValidation="False" /></td></tr>
+                <td colspan="2" height="10px">
+                   <div id="page_menu" align="left">
+
+		            <ul dir="ltr" >
+		            <li dir="ltr"><a href="Employee_Requisition.aspx" >Stationery  Requisition</a>
+                        
+                    </li>
+		                <li><a  href="Department_Requisition.aspx">Approve or Reject Requisition</a>
+                        
+                    </li>
+		            <li><a href="DelegateEmployee.aspx" >Delegate Employee</a>
+                         
+                    </li>
+
+		             <li><a  href="DepartmentDetail.aspx" >Maintain Department</a>
+                        
+                     </li>
+                       <li><a  href="ChangeCollectionPt.aspx" >Change Collection Points</a>
+                        
+                     </li>                  
+		               
+		            </ul>
+                    <br />
+
+	            </div>
+                   </td>
+            </tr>
+          
+            <tr>
+                <td width="80%" class="style1">
+        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        </td>
+            </tr>
+           
+        </table>
+    </form>
+</body>
+</html>

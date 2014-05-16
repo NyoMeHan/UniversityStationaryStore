@@ -1,0 +1,184 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Store.master.cs" Inherits="LogicUniversityWebLogic.Store" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title> Logic University </title>
+    <link href="Styles/NewStyle.css" rel="stylesheet" type="text/css" />
+     <link href="Styles/btnStyle.css"  rel="Stylesheet"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/btnStyle.css"  rel="Stylesheet"/>
+    <style type="text/css">
+       
+        .style7
+        {
+            width: 100%;
+            background-image: url(../images/index_02.jpg);   
+        }      
+        
+       
+     </style>
+     
+</head>
+<body bgcolor="#550403">
+    <form id="form1" runat="server">
+    <div>
+
+        <table class="store_maintable" cellspacing="0px" cellpadding="0px" align="center" >
+            <tr>
+                <td class ="logo_bg" width="17%" height="180px" >
+                    <div id="logo">
+                        <div class="logo">
+                            <a href=""><span class="logo_text">ISS<br />
+                            Infotech</span></a></div>
+                    </div>
+                </td>
+               
+                <td width="83%" valign="middle" >
+                   <div class="style1" id="header">
+			   <br/>
+			    Logic<span class="style3">University Inventory System</span><br/>
+                <span class="style4"><br />
+                 Provided by ISS Infotech-OUR SOLUTIONS MAKE YOUR BUSINESS BETTER!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
+                         ForeColor="Black"  Text="Log Off" CssClass="button" />
+                       </span>
+                 </div>           
+               
+              <%--  
+              
+              
+              <div class="style1" id="header">
+			<br />
+			Logic<span class="style3">University Inventory System</span>
+             <span class="style4"><br />
+             Provided by ISS Infotech-OUR SOLUTIONS MAKES YOUR BUSINESS BETTER!            </span></div>
+              
+              --%>
+             </td>
+            
+            </tr>
+            <!-- 2nd row start  Main Navigation Menu Area-->
+
+            <tr>
+
+            <td colspan= "2" height="40px" bgcolor="#D6D6D6" width="100%" align="center">
+            <table width="100%" cellspacing="0px" cellpadding="0px" align="center">
+            <tr>
+            <td align="center" width="100%"  height="40px">
+                <asp:Menu ID="mainMenu" runat="server" BackColor="#C2C2C2" 
+                    DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="15px" 
+                    ForeColor="#550403" Orientation="Horizontal" StaticSubMenuIndent="10px" 
+                    CssClass="mainNavmenu">
+                    <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#FFFBD6" />
+                    <DynamicSelectedStyle BackColor="#FFCC66" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/StoreClerkWelcomePage.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem 
+                            Text="Process Disbursement" Value="Process Disbursement">
+                            <asp:MenuItem NavigateUrl="~/DeptView.aspx" Text="View Dept Requisition" 
+                                Value="View Dept Requisition"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/ItemRequested.aspx" Text="View Item Retrieval" 
+                                Value="View Item Retrieval"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="ItemRetrieved.aspx" Text="RetrieveRequestedItem" 
+                                Value="Retrieve Requested Item"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="disbursement.aspx" Text="View Disbursement" 
+                                Value="View Disbursement"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="acknowledge.aspx" Text="Disbursement Ack" 
+                                Value="Disbursement Ack"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="pending.aspx" Text="Outstanding Items" 
+                                Value="Outstanding Items"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Process Purchase Order" 
+                            Value="Process Purchase Order">
+                            <asp:MenuItem NavigateUrl="~/CheckReorderItems.aspx" Text="Check Reorder Items" 
+                                Value="Check Reorder Items"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/MakePurchaseOrder.aspx" Text="Make Purchase Order" 
+                                Value="Make Purchase Order"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/StoredeliveryRecords.aspx" 
+                                Text="Store Delivery Records" Value="Store Delivery Records"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Process Stock Adjust" 
+                            Value="Process Stock Adjustment">
+                            <asp:MenuItem NavigateUrl="~/IssueStockAdjustment.aspx" 
+                                Text="Report Stock Adjust" Value="Report Stock Adjust"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/ApproveAdjustment.aspx" 
+                                Text="Approve Stock Adjust" Value="Approve Stock Adjustment"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem 
+                            Text="Maintain  Information" Value="Maintain  Information">
+                            <asp:MenuItem NavigateUrl="~/UpdateSupplierInfo.aspx" 
+                                Text="Maintain Supplier Info" Value="Maintain Supplier Info"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/MaintainStockItem.aspx" Text="Maintain Stock Item" 
+                                Value="Maintain Stock Item"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Reports" 
+                            Value="Reports">
+                            <asp:MenuItem NavigateUrl="~/NewViewTrendForEachDept.aspx" Text="Request by Dept"  Value="Request by Dept"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/NewViewTrendForEachItem.aspx" Text="Request by Item" Value="Request by Item"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/NewTrendForPurchaseCategory.aspx"  Text="PurchaseOrderbyCaty" Value="Purchase Order by Caty">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/StockHistoryCard.aspx"  Text="Stock Card Report" Value="Stock Card Report"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#FFCC66" />
+                </asp:Menu>
+                </td>
+                </tr>
+                </table>
+                </td></tr>
+
+              <!-- 3rd row start  footer-->
+            <tr>
+            <td colspan= "3" bgcolor="#D6D6D6"  class="mainContent">
+            
+             <%-- <div class="left_menu">
+                <ul>
+                <li><a href="">Make Purchase Order</a></li>
+                <li><a href="" >Department Requisition</a></li>
+                <li><a href="">Store Delivery Order Records</a></li>
+                <li><a href="">View Total Requisition</a></li>
+                <li><a href="" >Maintain Stock Catralogue</a></li>
+                <li><a href="">Update Supplier Information</a></li>
+                </ul>
+                </div>  --%>   
+                     <table align="center" cellpadding="0px" cellspacing="0px" width="100%" height="500px">
+                        <tr>
+                            <td width="3%" bgcolor="#D6D6D6" height="100%">
+                                &nbsp;</td>
+                            <td width="79%" align="center">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                 This is Main Content
+                                </asp:ContentPlaceHolder>
+                            </td>
+                            <td width="3%" bgcolor="#D6D6D6">
+                             </td>
+                        </tr>
+                    </table>
+                  
+                 </td>   
+                
+                 </tr>   
+              
+          <!-- 3rd row start  footer-->
+           
+            <tr>
+                <td colspan="2" width="100%" bgcolor="#D6D6D6">
+                
+              <div id="footer"> COPYRIGHT (C) 2013, Designed By SA-36 Team4 Students,  <a href="http://iss.nus.edu.sg" style="text-decoration:none; color: navy;" >Institute of System Science</a> </div>
+                  </td>
+               
+            </tr>
+
+        </table>
+
+    </div>
+    </form>
+</body>
+</html>

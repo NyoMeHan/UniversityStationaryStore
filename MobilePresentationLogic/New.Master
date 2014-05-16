@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="New.master.cs" Inherits="PresentaionLayer.New" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <link type="text/css" href="Styles/NewStyle.css" rel="stylesheet" media="screen" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+       
+     </style>
+</head>
+<body bgcolor="#550403">
+    <form id="form1" runat="server">
+    <div>
+
+        <table class="maintable" cellspacing="0px" cellpadding="0px" align="center" >
+            <tr>
+                <td  bgcolor="#E2E2E2">
+                    <div id="logo">
+                        <div class="logo">
+                            <a href=""><span class="style5">ISS<br />
+                            Infotech</span></a></div>
+                    </div>
+                </td>
+               
+                <td width="100%" valign="top" class="style6" colspan="2">
+                   <div class="style1" id="header">
+			    <br />
+			    Logic<span class="style3">University Inventory System</span>
+                 <span class="style4"><br />
+                 Provided by ISS Infotech-OUR SOLUTIONS MAKES YOUR BUSINESS BETTER!            </span></div>           
+                <div class="top_menu" >
+                  <ul>
+                  <li><a href="">HOME</a></li>
+                  <li><a href="">ABOUT</a></li>
+                  <li><a href="">FAQ</a></li>
+                  <li><a href="">COTNACT</a></li>
+                  </ul>
+                  </div>
+                
+             </td>
+            
+            </tr>
+            <!-- 2nd row start  Main Content Area-->
+            <tr>
+            <td valign="top" align="center" width="20%"  bgcolor="#D6D6D6">
+            
+              <div class="left_menu">
+                <ul>
+                <li><a href="">Make Purchase Order</a></li>
+                <li><a href="" >Department Requisition</a></li>
+                <li><a href="">Store Delivery Order Records</a></li>
+                <li><a href="">View Total Requisition</a></li>
+                <li><a href="" >Maintain Stock Catralogue</a></li>
+                <li><a href="">Update Supplier Information</a></li>
+                </ul>
+                </div>       
+                 </td>   
+                 <td rowspan="0" colspan="0" class="mainContent" width="72%" align="center">                   
+    
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                This is Main Content
+                </asp:ContentPlaceHolder>
+                   
+                </td>
+                <td width="3%" bgcolor="#D6D6D6">
+               <%-- <img src="images/index_07.jpg" alt="" width="50px"   height="100%" />--%>
+                    </td>
+                 </tr>   
+              
+            <!-- 3rd row start  footer-->
+           
+            <tr>
+                <td colspan="3" width="100%" bgcolor="#D6D6D6">
+                
+              <div id="footer"> COPYRIGHT (C) 2013, Designed By SA-36 Team4 Students,  <a href="http://iss.nus.edu.sg" style="text-decoration:none; color: navy;" >Institute of System Science</a> </div>
+                  </td>
+               
+            </tr>
+
+        </table>
+
+    </div>
+    </form>
+</body>
+</html>

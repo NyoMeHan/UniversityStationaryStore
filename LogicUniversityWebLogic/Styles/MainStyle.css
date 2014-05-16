@@ -1,0 +1,252 @@
+﻿* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body 
+{
+	height: 100%;
+	background-color: #ffffff;
+	color: navy;
+	font-family: tahoma, arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+
+#container{ width: 80%;
+            height: 650px;
+			margin: 0px auto;
+			border-color: #9e9ec3;
+			border-width: 0px 1px 1px;
+			border-style: solid;
+			
+            }
+
+.clearthis {
+	margin : 0px;
+	height : 1px;
+	clear : both;
+	float : none;
+	font-size : 1px;
+	line-height : 0px;
+	overflow : hidden;
+}
+
+#page_menu 
+{
+	margin: 0px auto;
+	margin-bottom: 1px;
+	width: 100%;
+	height: 21px;
+}
+
+#page_menu ul {
+	width: 100%;
+	height: 21px;
+	list-style-type: none;
+	
+}
+
+#page_menu li {
+	margin-right: 1px;
+	width: 180px;
+	height: 21px;
+	float: right;
+	background: url('images/menu_background.gif') repeat-x 0px 0px;
+	overflow: hidden;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#page_menu li.last {
+	
+	width: 180px;
+}
+
+#page_menu a {
+	padding-top: 2px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+
+#page_menu a:hover {
+	color:  #9e9ec3;
+	padding-top: 2px;
+	background-color: white;
+	font-size: 13px;
+	margin-bottom: 0px;
+	
+}
+
+
+/* Left Sidebar */
+
+#left_sidebar {
+	width: 170px;
+	float: left;
+	text-align: left;
+	color: #8989b6;
+}
+
+#left_sidebar a {
+	color: #8989b6;
+}
+
+#left_sidebar a:hover {
+	color: #75759c;
+	
+}
+		
+		/* Left Sidebar: Newsletter Signup Box */
+
+#userlogin {
+	margin-bottom: 2px;
+	padding: 5px 5px 15px;
+	width: 170px;
+	border-color: #9e9ec3;
+	border-width: 1px 1px 1px 0px;
+	border-style: solid;
+	overflow: hidden;
+	font-weight: bold;
+	font-size: 10px;
+	
+}
+
+#userlogin h2 {
+	padding-bottom: 10px;
+	font-size: 12px;
+}
+
+#userlogin input {
+	padding-left: 0px;
+	width: 105px;
+	height: 16px;
+	border: #bfbfe6 1px solid;
+	float: left;
+	clear: left;
+}
+
+#userlogin input.button {
+	margin-top: 3px;
+	margin-left: 95px;
+	width: 22px;
+	height: 13px;
+	border: none;
+}
+
+#userlogin #link_cancel {
+	margin-top: 5px;
+}
+
+
+/* Left Sidebar : Categories */
+
+#categories {
+	margin-bottom: 1px;
+	padding: 1px 1px 1px 0px;
+	border-color: #9e9ec3;
+	border-width: 1px 1px 1px 0px;
+	border-style: solid;
+	text-align: center;
+}
+
+#categories_header {
+	margin-bottom: 2px;
+	width: 180px;
+	height: 20px;
+	background-color: #9e9ec3;
+	overflow: hidden;
+}
+
+#categories_header h2 {
+	margin-top: 3px;
+	margin-left: 5px;
+	color: #fff;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+#categories ul {
+	margin: 0px auto;
+	width: 170px;
+	list-style-type: none;
+}
+
+#categories li {
+	width: 180px;
+	height: 21px;
+	list-style-type: none;
+	text-align: left;
+	border-bottom: #b6b6d2 1px solid;
+	float: left;
+}
+
+#categories li.last {
+	border: none;
+}
+
+#categories li a {
+	margin-top: 4px;
+	margin-left: 6px;
+	display: block;
+	color: #7575a9;
+	text-decoration: none;
+}
+
+#categories li a:hover {
+	color: #56567c;
+}
+
+
+/* Left Sidebar : Special Offer */
+
+#specialoffer {
+	width: 170px;
+	height: 98px;
+	overflow: hidden;
+	background: url('images/specialoffer_background.jpg') no-repeat 0px 0px;
+	color: #fff;
+	font-size: 11px;
+}
+
+#specialoffer_text {
+	width: 170px;
+	height: 60px;
+}
+
+#specialoffer_text h2 {
+	margin-top: 8px;
+	margin-left: 10px;
+	width: 113px;
+	height: 38px;
+	background: url('images/specialoffer_header.gif') no-repeat 0px 0px;
+}
+
+#specialoffer_link {
+	margin-left: 12px;
+}
+
+#specialoffer_link a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#specialoffer_link a:hover {
+	color: #f2f2f2;
+}
+/* Page Footer */
+
+#page_footer {
+	width: 100%;
+	border-top: 1px;
+	border-color: #9e9ec3;
+	border-width: 1px 0px 0px 0px;
+	border-style: solid;
+	text-align: center;
+	height: 30px;
+	font-weight: bold;
+}
+
